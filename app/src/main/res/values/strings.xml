@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">CoinMarketCapTestApi</string>
+    <string name="search_hint">Search currency by its name and code</string>
+    <string name="exchange_rate_to_btc">Exchange rate to BTC</string>
+    <string name="exchange_rate_to_usd">Exchange rate to USD</string>
+    <string name="total_coins_available">Total coins available</string>
+    <string name="max_coins_available">Max coins available</string>
+    <string name="total_market_capitalization">Total market capitalization</string>
+
+    <string name="update_status_many_minutes">Updated %1$d minutes ago</string>
+    <string name="update_status_one_minute">Updated %1$d minute ago</string>
+    <plurals name="update_status_minutes">
+        <item quantity="zero">@string/update_status_many_minutes</item>
+        <item quantity="one">@string/update_status_one_minute</item>
+        <item quantity="two">@string/update_status_many_minutes</item>
+        <item quantity="few">@string/update_status_many_minutes</item>
+        <item quantity="many">@string/update_status_many_minutes</item>
+        <item quantity="other">@string/update_status_many_minutes</item>
+    </plurals>
+
+    <string name="update_status_many_hours">Updated %1$d hours ago</string>
+    <string name="update_status_one_hour">Updated %1$d hour ago</string>
+    <string name="try_again">Try again</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="percent_change_1h">Percent change 1h</string>
+    <string name="percent_change_24h">Percent change 24h</string>
+    <string name="percent_change_7d">Percent change 7d</string>
+    <plurals name="update_status_hours">
+        <item quantity="zero">@string/update_status_many_hours</item>
+        <item quantity="one">@string/update_status_one_hour</item>
+        <item quantity="two">@string/update_status_many_hours</item>
+        <item quantity="few">@string/update_status_many_hours</item>
+        <item quantity="many">@string/update_status_many_hours</item>
+        <item quantity="other">@string/update_status_many_hours</item>
+    </plurals>
+
+</resources>

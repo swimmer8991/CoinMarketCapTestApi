@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.CoinMarketCapDetailsActivity">
+
+    <TextView
+        android:id="@+id/tv_exchange_rate_to_btc_hint"
+        style="@style/DefaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exchange_rate_to_btc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_exchange_rate_to_usd_hint"
+        style="@style/DefaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exchange_rate_to_usd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_exchange_rate_to_btc_hint" />
+
+    <TextView
+        android:id="@+id/tv_total_coins_available_hint"
+        style="@style/DefaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_coins_available"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_exchange_rate_to_usd_hint" />
+
+    <TextView
+        android:id="@+id/tv_max_coins_available_hint"
+        style="@style/DefaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_coins_available"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_coins_available_hint" />
+
+    <TextView
+        android:id="@+id/tv_total_market_capitalization_hint"
+        style="@style/DefaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_market_capitalization"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_max_coins_available_hint" />
+
+    <TextView
+        android:id="@+id/tv_percent_change_1h_hint"
+        style="@style/DefaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent_change_1h"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_market_capitalization_hint"/>
+
+    <TextView
+        android:id="@+id/tv_percent_change_24h_hint"
+        style="@style/DefaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent_change_24h"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_percent_change_1h_hint"/>
+
+    <TextView
+        android:id="@+id/tv_percent_change_7d_hint"
+        style="@style/DefaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent_change_7d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_percent_change_24h_hint"/>
+
+    <TextView
+        android:id="@+id/tv_exchange_rate_to_btc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_exchange_rate_to_btc_hint"
+        app:layout_constraintStart_toStartOf="@id/tv_total_market_capitalization"
+        app:layout_constraintTop_toTopOf="@id/tv_exchange_rate_to_btc_hint" />
+
+    <TextView
+        android:id="@+id/tv_exchange_rate_to_usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_exchange_rate_to_usd_hint"
+        app:layout_constraintStart_toStartOf="@id/tv_total_market_capitalization"
+        app:layout_constraintTop_toTopOf="@id/tv_exchange_rate_to_usd_hint" />
+
+    <TextView
+        android:id="@+id/tv_total_coins_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_total_coins_available_hint"
+        app:layout_constraintStart_toStartOf="@id/tv_total_market_capitalization"
+        app:layout_constraintTop_toTopOf="@id/tv_total_coins_available_hint" />
+
+    <TextView
+        android:id="@+id/tv_max_coins_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_max_coins_available_hint"
+        app:layout_constraintStart_toStartOf="@id/tv_total_market_capitalization"
+        app:layout_constraintTop_toTopOf="@id/tv_max_coins_available_hint" />
+
+    <TextView
+        android:id="@+id/tv_total_market_capitalization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        tools:text="10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_total_market_capitalization_hint"
+        app:layout_constraintStart_toEndOf="@id/tv_total_market_capitalization_hint"
+        app:layout_constraintTop_toTopOf="@id/tv_total_market_capitalization_hint" />
+
+    <TextView
+        android:id="@+id/tv_percent_change_1h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_percent_change_1h_hint"
+        app:layout_constraintStart_toStartOf="@id/tv_total_market_capitalization"
+        app:layout_constraintTop_toTopOf="@id/tv_percent_change_1h_hint" />
+
+    <TextView
+        android:id="@+id/tv_percent_change_24h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_percent_change_24h_hint"
+        app:layout_constraintStart_toStartOf="@id/tv_total_market_capitalization"
+        app:layout_constraintTop_toTopOf="@id/tv_percent_change_24h_hint" />
+
+    <TextView
+        android:id="@+id/tv_percent_change_7d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        tools:text="10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_percent_change_7d_hint"
+        app:layout_constraintStart_toEndOf="@id/tv_total_market_capitalization_hint"
+        app:layout_constraintTop_toTopOf="@id/tv_percent_change_7d_hint" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
