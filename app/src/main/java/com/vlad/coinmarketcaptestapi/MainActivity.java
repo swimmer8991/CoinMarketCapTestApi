@@ -252,7 +252,7 @@ public class MainActivity extends AppCompatActivity {
             updateStatusTextView.setVisibility(View.VISIBLE);
             updateStatusTextView.setText(message);
         } else {
-            String message = getResources().getQuantityString(R.plurals.update_status_hours, (int) updateStatus, updateStatus);
+            String message = getResources().getQuantityString(R.plurals.update_status_hours, (int) TimeUnit.MINUTES.toHours(updateStatus), TimeUnit.MINUTES.toHours(updateStatus));
             updateStatusTextView.setVisibility(View.VISIBLE);
             updateStatusTextView.setText(message);
         }
